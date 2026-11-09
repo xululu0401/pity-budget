@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>保底成本台</title><style>
+:root{font:16px system-ui,-apple-system,"PingFang SC",sans-serif;color:#22344e;background:#eef3f8}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1280px;margin:auto;padding:30px}header{padding-top:44px}h1{font-size:40px;margin:10px 0;letter-spacing:-1px;overflow-wrap:anywhere}header p{color:#5a6d84;max-width:980px;line-height:1.8}.eyebrow{font-size:12px;letter-spacing:2px;color:#4f6b91;font-weight:700}main{padding-top:0;display:grid;grid-template-columns:470px minmax(0,1fr);gap:22px}.panel{border:1px solid #d9e3ee;background:white;padding:24px;border-radius:18px;min-width:0}.input{align-self:start}h2{font-size:22px;margin:0 0 14px;overflow-wrap:anywhere}h3{font-size:17px;margin:24px 0 8px;overflow-wrap:anywhere}h4{font-size:14px;margin:16px 0 6px;color:#4f6b91;overflow-wrap:anywhere}label{font-size:14px;font-weight:650;display:block;margin:13px 0 6px}input[type=text],select{width:100%;min-width:0;font:inherit;font-size:14px;padding:8px 9px;border:1px solid #aebfd4;border-radius:8px;color:inherit;background:#fcfdff}
+.f{margin:12px 0 4px}.f span{font-size:13px;color:#4f6b91;font-weight:650;display:block;margin-bottom:4px}.f .hint{font-size:12.5px;font-weight:400}
+.buttons{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0}button{font:inherit;font-size:14px;padding:9px 12px;border:1px solid #bac9dc;border-radius:8px;background:#eff4fb;color:#254d87;cursor:pointer;max-width:100%;white-space:normal}button.primary{background:#2d5f96;color:white;border-color:#2d5f96}button.mini{font-size:12px;padding:3px 8px}button:disabled{opacity:.4;cursor:not-allowed}.hint{font-size:13px;line-height:1.75;color:#61738a}.metric{font-size:22px;font-weight:600;margin:4px 0 6px;line-height:1.6;overflow-wrap:anywhere}.metric strong{font-size:33px;font-weight:750;font-variant-numeric:tabular-nums}.metric .sub{font-size:15px;color:#5a6d84;font-weight:600}.stats{display:flex;gap:16px;flex-wrap:wrap;margin:18px 0}.stats>div{min-width:0}.stats strong{display:block;font-size:21px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.stats span{font-size:12px;color:#6a7c92;display:block;max-width:168px;line-height:1.4}.bad{color:#a23b28}.good{color:#2b6b4f}.warn{color:#a5680f}.tag{display:inline-block;font-size:12px;padding:3px 9px;border-radius:20px;background:#e8eef7;color:#3b5b86;margin-left:4px;vertical-align:middle}.tag.bad{background:#fbe4de;color:#a23b28}.tag.good{background:#e3f1ea;color:#2b6b4f}.tag.warn{background:#fbf1de;color:#8a5a10}
+.callout{border:1px solid #d9e3ee;background:#f7fafe;border-radius:12px;padding:14px 16px;margin:14px 0}.callout.key{background:#f4f8fd;border-color:#c6d8ee}.callout.bad{background:#fdf4f1;border-color:#f0cfc6}.callout p{margin:6px 0;font-size:13.5px;line-height:1.85;color:#3d4f66}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}.tw{max-width:100%;overflow-x:auto}table.fix{table-layout:fixed}@media(min-width:1001px){.tw>table{min-width:max-content}}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid #e4eaf1;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;vertical-align:top}th{font-size:12px;color:#62748c;font-weight:650;overflow-wrap:normal;word-break:keep-all}td.num{text-align:right;white-space:nowrap}tr.cur{background:#eef6f0}tr.dim{color:#7c8b9d}.note{font-size:12.5px;color:#61738a;line-height:1.8;margin:8px 0}.model{margin-top:20px;border-top:1px solid #e4eaf1;padding-top:12px}.model summary{cursor:pointer;font-weight:650;font-size:14px;color:#2d5f96}.model p{font-size:13px;line-height:1.85;color:#4d6076;overflow-wrap:anywhere}#imports{display:none}#error{color:#a23b28;font-size:14px;line-height:1.8;overflow-wrap:anywhere}#error:not(:empty){background:#fdf1ee;border:1px solid #f0cfc6;border-radius:10px;padding:12px;margin-bottom:14px}#error:empty{display:none}#message,#savedNote{font-size:13px;color:#2b6b4f;line-height:1.8;overflow-wrap:anywhere}footer{color:#7b8ca0;font-size:12.5px;line-height:1.9}
+.advice{list-style:none;padding:0;margin:10px 0}.advice li{border-left:3px solid #6e90bd;padding:8px 0 8px 12px;margin:10px 0;font-size:13.5px;line-height:1.85;overflow-wrap:anywhere}.advice li.ok{border-color:#2b6b4f}.advice li.warn{border-color:#c9821f}.advice li.act{border-color:#a23b28}.advice li.key{border-color:#2d5f96;background:#f4f8fd;border-radius:0 8px 8px 0}.advice li.info{border-color:#95a7bd}.advice .mini{margin-top:6px}
+#curveWrap{width:100%;max-width:100%;overflow-x:auto}#curve{width:100%;height:210px;display:block;max-width:100%}
+#steps{list-style:none;padding:0;margin:8px 0;font-size:13.5px;line-height:1.9;color:#3d4f66}#steps li{padding:3px 0}
+@media(max-width:1000px){header,main,footer{padding:18px}h1{font-size:28px}main{grid-template-columns:1fr}.panel{padding:18px}table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%;max-width:100%;white-space:normal}table.stack thead{display:none}table.stack tr{border:1px solid #e0e8f0;border-radius:10px;padding:10px;margin:10px 0}table.stack td{border:0;padding:3px 0;font-size:13px;text-align:left;white-space:normal}table.stack td.num{text-align:left}table.stack td:before{content:attr(data-label) "：";color:#6a7c92;font-size:12px}}
+@media(max-width:620px){.metric strong{font-size:22px}.metric{font-size:19px}.stats strong{font-size:18px}.stats>div{min-width:calc(50% - 8px)}}
+@media(max-width:345px){.gridin{grid-template-columns:minmax(0,1fr)}.metric strong{font-size:18px}}
+@media(min-width:621px){.gridin{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 10px}}
+</style><header><div class="eyebrow">PITY BUDGET · 有保底的概率发放规则下的成本分布</div><h1>这套保底规则，抽到目标平均要花多少、最坏要花多少？</h1><p>「0.6% 出、90 抽保底」这类规则里，最容易记的是<strong>概率</strong>，最难算的是<strong>要花多少钱</strong>。保底成本台把这条规则还原成逐抽概率序列，算出达到目标所需的抽数分布：<strong>平均成本、一半人多少、九成人多少、最坏多少</strong>，以及在你的预算内能拿到的概率。默认样例是一份虚构的规则参数，请按你自己看到的规则修改。</p></header><main>
+<section class="panel input" id="inputPanel"><h2>先填这条概率规则</h2>
+<div class="gridin">
+<label class="f"><span>单次成本（元）</span><input type="text" inputmode="decimal" id="cost" aria-label="单次成本"></label>
+<label class="f"><span>单次出货概率（%）</span><input type="text" inputmode="decimal" id="rate" aria-label="单次出货概率"></label>
+</div>
+<label class="f"><span>保底口径</span><select id="mode" aria-label="保底口径">
+<option value="hard">硬保底：第 N 抽必出</option>
+<option value="soft">软保底：第 s 抽起每次加概率，第 N 抽必出</option>
+<option value="none">无保底：每抽概率都一样</option>
+</select></label>
+<div class="gridin">
+<label class="f" id="f-pity"><span>多少抽必出</span><input type="text" inputmode="numeric" id="pity" aria-label="多少抽必出"></label>
+<label class="f" id="f-softStart"><span>第几抽开始加概率</span><input type="text" inputmode="numeric" id="softStart" aria-label="第几抽开始加概率"></label>
+<label class="f" id="f-softStep"><span>每次加多少个百分点</span><input type="text" inputmode="decimal" id="softStep" aria-label="每次加多少个百分点"></label>
+</div>
+<div class="gridin">
+<label class="f"><span>要拿到几个</span><input type="text" inputmode="numeric" id="targets" aria-label="要拿到几个"></label>
+<label class="f"><span>预算（元，可留空）</span><input type="text" inputmode="decimal" id="budget" aria-label="预算，可留空"></label>
+</div>
+<div class="buttons"><button type="button" id="recompute" class="primary">重新计算</button><button type="button" id="demo">载入虚构示例</button></div>
+<h4>内置场景（全部虚构，点一下换一整组输入）</h4>
+<div class="buttons" id="presets"></div>
+<div class="buttons" id="downloads"><button type="button" id="csv">CSV 明细</button><button type="button" id="md">结果说明 MD</button><button type="button" id="json">JSON 备份</button><button type="button" id="png">结果卡 PNG</button><button type="button" id="save">保存到本机</button><button type="button" id="restore">读取已保存</button><button type="button" id="backup">下载备份</button><button type="button" id="import">导入备份</button><input type="file" id="imports" accept=".json,application/json"></div>
+<p id="message"></p><p id="savedNote"></p>
+<h4>算法与使用边界</h4>
+<div class="hint" id="modelHint"></div>
+<p class="note">概率、保底规则、成本全部由你自己填写；页面不提供任何游戏、平台或活动的真实概率，不联网，也不预测任何一次抽取的结果。</p>
+</section>
+<section class="panel" id="result"><div id="error"></div><div id="resultBody"></div></section>
+</main>
+<footer><p>保底成本台 V1.0.0 · 页面里的每个数字都能在同一份导出的 CSV / MD 里找到；默认样例与内置场景均为虚构示例，不代表任何平台。</p></footer>
+<script>/*CORE*/</script><script>/*UI*/</script></html>

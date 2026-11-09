@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" font-family="PingFang SC,Helvetica Neue,Arial,sans-serif">
+<rect width="1200" height="1200" fill="#ffffff"/>
+<rect width="1200" height="288" fill="#eef3f8"/><rect width="1200" height="16" fill="#2d5f96"/>
+<text x="80" y="102" font-size="25" font-weight="600" fill="#4f6b91" letter-spacing="3">PITY BUDGET · 有保底的概率发放规则下的成本分布</text>
+<text x="80" y="184" font-size="60" font-weight="700" fill="#22344e">保底成本台</text>
+<text x="80" y="242" font-size="25" fill="#5a6d84">逐抽出货概率 p₁…p_N → 达到目标的抽数分布 → 期望 / 分位数 / 预算达成概率</text>
+
+<text x="80" y="430" font-size="78" font-weight="700" fill="#22344e">¥836</text>
+<text x="80" y="478" font-size="29" fill="#5a6d84">达到目标的平均成本（约 69.7 抽）</text>
+<text x="80" y="522" font-size="21" fill="#7b8ca0">口径：硬保底每 90 抽必出 · 基础概率 0.6000%</text>
+<text x="80" y="552" font-size="21" fill="#7b8ca0">单次 ¥12.00 · 目标 1 个 · 预算 ¥1,000</text>
+
+<rect x="636" y="336" width="484" height="214" fill="#fbfdff" stroke="#e4eaf1"/>
+<path d="M636.0 550.0 L646.8 547.4 L652.1 546.2 L662.9 543.7 L668.3 542.4 L679.0 539.9 L684.4 538.7 L695.2 536.3 L700.5 535.1 L711.3 532.7 L716.7 531.5 L727.4 529.2 L732.8 528.0 L743.6 525.7 L748.9 524.6 L759.7 522.3 L765.1 521.2 L775.8 519.0 L781.2 517.9 L792.0 515.7 L797.3 514.7 L808.1 512.5 L813.5 511.5 L824.2 509.4 L829.6 508.3 L840.4 506.3 L845.7 505.2 L856.5 503.2 L861.9 502.2 L872.6 500.2 L878.0 499.2 L888.8 497.3 L894.1 496.3 L904.9 494.4 L910.3 493.4 L921.0 491.6 L926.4 490.6 L937.2 488.8 L942.5 487.9 L953.3 486.0 L958.7 485.1 L969.4 483.4 L974.8 482.5 L985.6 480.7 L990.9 479.9 L1001.7 478.1 L1007.1 477.3 L1017.8 475.6 L1023.2 474.8 L1034.0 473.1 L1039.3 472.3 L1050.1 470.6 L1055.5 469.8 L1066.2 468.2 L1071.6 467.4 L1082.4 465.9 L1087.7 465.1 L1098.5 463.5 L1103.9 462.8 L1114.6 461.3 L1120.0 336.0" fill="none" stroke="#2d5f96" stroke-width="3"/>
+<line x1="1120.0" y1="336" x2="1120.0" y2="550" stroke="#2b6b4f" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="636" y="324" font-size="19" fill="#7b8ca0">100%</text>
+<text x="636" y="576" font-size="19" fill="#7b8ca0">0 抽</text>
+<text x="1120" y="576" font-size="19" fill="#7b8ca0" text-anchor="end">90 抽</text>
+<text x="648" y="362" font-size="19" font-weight="600" fill="#2b6b4f">中位数 90 抽</text>
+<text x="648" y="384" font-size="18" fill="#7b8ca0">抽数的累计概率</text>
+
+<rect x="80" y="606" width="296" height="124" rx="14" fill="#f4f8fd" stroke="#d9e3ee"/>
+<text x="104" y="646" font-size="22" font-weight="600" fill="#61738a">中位数成本</text>
+<text x="104" y="694" font-size="38" font-weight="700" fill="#2d5f96">¥1,080</text>
+<text x="104" y="720" font-size="19" fill="#7b8ca0">90 抽 · 一半人在此之内</text>
+<rect x="400" y="606" width="296" height="124" rx="14" fill="#f4f8fd" stroke="#d9e3ee"/>
+<text x="424" y="646" font-size="22" font-weight="600" fill="#61738a">90% 把握</text>
+<text x="424" y="694" font-size="38" font-weight="700" fill="#2d5f96">¥1,080</text>
+<text x="424" y="720" font-size="19" fill="#7b8ca0">90 抽 · 九成人在此之内</text>
+<rect x="720" y="606" width="400" height="124" rx="14" fill="#fdf4f1" stroke="#f0cfc6"/>
+<text x="744" y="646" font-size="22" font-weight="600" fill="#a23b28">同概率无保底 · 99% 把握</text>
+<text x="744" y="694" font-size="38" font-weight="700" fill="#a23b28">¥9,192</text>
+<text x="744" y="720" font-size="19" fill="#a23b28">766 抽 · 有保底只要 90 抽</text>
+
+<text x="80" y="778" font-size="29" font-weight="700" fill="#22344e">要点</text>
+<text x="80" y="806" font-size="22" fill="#4d6076">· 保底主要砍的是尾部：同概率（0.6000%）无保底期望 166.7 抽（¥2,000），99%</text><text x="80" y="835" font-size="22" fill="#4d6076">　 把握 766 抽（¥9,192）</text><text x="80" y="876" font-size="22" fill="#4d6076">· 这条保底把期望压到 ¥836（降 58.2%），把 99% 把握压到 90 抽（¥1,080，</text><text x="80" y="905" font-size="22" fill="#4d6076">　降 88.3%）——降的主要是尾部</text><text x="80" y="946" font-size="22" fill="#4d6076">· 58.53% 的情况要一直抽到第 90 抽（保底）才出；中位数就等于最坏情况（¥1,080），</text><text x="80" y="975" font-size="22" fill="#4d6076">　所以「平均 69.7 抽」不代表多数人的体验</text><text x="80" y="1016" font-size="22" fill="#4d6076">· 预算 ¥1,000 只能买 83 抽，拿到目标的概率是 39.32%：期望成本 ¥836 </text><text x="80" y="1045" font-size="22" fill="#4d6076">　虽然低于预算，成功率却不到一半</text>
+<rect y="1140" width="1200" height="60" fill="#eef3f8"/>
+<text x="80" y="1178" font-size="20" fill="#7b8ca0">保底成本台 V1.0.0 · 数字来自同一次计算 · 默认样例与内置场景均为虚构示例，概率与保底规则由用户自填</text>
+</svg>
